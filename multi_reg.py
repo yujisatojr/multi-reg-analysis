@@ -1,36 +1,15 @@
-import numpy as np
 import pandas as pd
-
-from mpl_toolkits.mplot3d import Axes3D  #3Dplot
+import numpy as np
 import matplotlib.pyplot as plt
-import seaborn as sns
+import googletrans
+from googletrans import Translator
 
-pd.get_option("display.max_columns")
-pd.get_option("display.max_rows")
-df = pd.read_csv("/Users/yuji/Desktop/espalhar/rawnumbers.csv", sep=",")
-df.head()
+pd.options.display.max_columns
+pd.options.display.max_rows
+df = pd.read_csv("/Users/yuji/Desktop/espalhar/suumo_tokyo_data.csv", sep=",")
 
-x = df[['building_age', 'stories_tall', 'floor', 'administrative_cost', 'deposit', 'gratuity', 'rooms', 'sq_meters']]
-y = df[['price']]
-
-
-x1 = df[['sq_meters']]
-x2 = df[['rooms']]
-x3 = df[['deposit']]
-
-print(x.shape)
-print(y.shape)
-
-fig=plt.figure()
-ax=Axes3D(fig)
-
-ax.scatter3D(x1, x2, y)
-ax.set_xlabel("x1")
-ax.set_ylabel("x2")
-ax.set_zlabel("y")
-
-plt.show()
-
+x = df[['Building Age','Time[min]', 'Deposit', 'Square Meters']]
+y = df[['Price']]
 
 #run multiple regresion
 from sklearn import preprocessing
@@ -48,7 +27,7 @@ import statsmodels.api as sm
 x_add_const = sm.add_constant(xss_sk)
 model_sm = sm.OLS(yss_sk, x_add_const).fit()
 
-results = model_sm.summary(yname = 'Price', xname=['Const', 'Building Age', 'Stories Tall', 'Floor', 'Administrative Cost', 'Deposit', 'Gratuity', 'Number of Rooms', 'Square Meters'])
+results = model_sm.summary(yname = 'Price', xname=['Const', 'Building Age', 'Time to Station', 'Deposit', 'Square Meters'])
 print(results)
 
 #show correlation coefficient
