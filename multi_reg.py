@@ -1,8 +1,6 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-import googletrans
-from googletrans import Translator
 
 pd.options.display.max_columns
 pd.options.display.max_rows
