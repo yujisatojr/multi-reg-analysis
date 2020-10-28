@@ -17,7 +17,7 @@ import matplotlib.pyplot as plt
 
 pd.options.display.max_columns
 pd.options.display.max_rows
-df = pd.read_csv("/Users/yuji/Desktop/espalhar/suumo_tokyo_data.csv", sep=",")
+df = pd.read_csv("suumo_tokyo_data.csv", sep=",")
 
 x = df[['Building Age','Time[min]', 'Deposit', 'Square Meters']]
 y = df[['Price']]
