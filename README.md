@@ -51,17 +51,17 @@ print(yss_sk)
 
 The first result we obtained is the following:
 
-![Multi-Regression%20Analysis%20Report%20324085edfb1645859d79327ea901bc0f/Screen_Shot_2020-04-13_at_22.50.13.png](Multi-Regression%20Analysis%20Report%20324085edfb1645859d79327ea901bc0f/Screen_Shot_2020-04-13_at_22.50.13.png)
+![img/Screen_Shot_2020-04-13_at_22.50.13.png](img/Screen_Shot_2020-04-13_at_22.50.13.png)
 
 ## Explanation of the Data
 
-![Multi-Regression%20Analysis%20Report%20324085edfb1645859d79327ea901bc0f/Screen_Shot_2020-04-14_at_00.57.43.png](Multi-Regression%20Analysis%20Report%20324085edfb1645859d79327ea901bc0f/Screen_Shot_2020-04-14_at_00.57.43.png)
+![img/Screen_Shot_2020-04-14_at_00.57.43.png](img/Screen_Shot_2020-04-14_at_00.57.43.png)
 
 ### Variable Selection Process
 
 By choosing a fewer variables from the data, we are able to eliminate bias and increase the efficiency of analysis.
 
-![Multi-Regression%20Analysis%20Report%20324085edfb1645859d79327ea901bc0f/Screen_Shot_2020-04-14_at_00.24.56.png](Multi-Regression%20Analysis%20Report%20324085edfb1645859d79327ea901bc0f/Screen_Shot_2020-04-14_at_00.24.56.png)
+![img/Screen_Shot_2020-04-14_at_00.24.56.png](img/Screen_Shot_2020-04-14_at_00.24.56.png)
 
 **Floor:** In general Tokyo area, it is not significant to consider which floor you are on
 
@@ -69,29 +69,29 @@ By choosing a fewer variables from the data, we are able to eliminate bias and i
 
 **Number of Rooms:** By looking at coefficient, it is negatively correlated; therefore, it is not a reliable output
 
-![Multi-Regression%20Analysis%20Report%20324085edfb1645859d79327ea901bc0f/Screen_Shot_2020-04-14_at_00.26.06.png](Multi-Regression%20Analysis%20Report%20324085edfb1645859d79327ea901bc0f/Screen_Shot_2020-04-14_at_00.26.06.png)
+![img/Screen_Shot_2020-04-14_at_00.26.06.png](img/Screen_Shot_2020-04-14_at_00.26.06.png)
 
 ## Evaluation of the Data
 
-![Multi-Regression%20Analysis%20Report%20324085edfb1645859d79327ea901bc0f/Screen_Shot_2020-04-14_at_00.27.30.png](Multi-Regression%20Analysis%20Report%20324085edfb1645859d79327ea901bc0f/Screen_Shot_2020-04-14_at_00.27.30.png)
+![img/Screen_Shot_2020-04-14_at_00.27.30.png](img/Screen_Shot_2020-04-14_at_00.27.30.png)
 
 **R-squared**: Determines either the result fits to the ideal model or not
 
 Based on the result, the data has the R-squared of 87.5%
 
-![Multi-Regression%20Analysis%20Report%20324085edfb1645859d79327ea901bc0f/Screen_Shot_2020-04-14_at_00.28.18.png](Multi-Regression%20Analysis%20Report%20324085edfb1645859d79327ea901bc0f/Screen_Shot_2020-04-14_at_00.28.18.png)
+![img/Screen_Shot_2020-04-14_at_00.28.18.png](img/Screen_Shot_2020-04-14_at_00.28.18.png)
 
 **P-value**: If it is under the significant level (0.05), the prediction would be outside of the 95% interval.
 
 Which means that this result is a reliable output.
 
-![Multi-Regression%20Analysis%20Report%20324085edfb1645859d79327ea901bc0f/Screen_Shot_2020-04-14_at_00.28.47.png](Multi-Regression%20Analysis%20Report%20324085edfb1645859d79327ea901bc0f/Screen_Shot_2020-04-14_at_00.28.47.png)
+![img/Screen_Shot_2020-04-14_at_00.28.47.png](img/Screen_Shot_2020-04-14_at_00.28.47.png)
 
 ## Real World Application Example Ⅰ
 
 Case: If the housing is 5-square meters bigger, how much does the price increase?
 
-![Multi-Regression%20Analysis%20Report%20324085edfb1645859d79327ea901bc0f/Screen_Shot_2020-04-14_at_00.29.28.png](Multi-Regression%20Analysis%20Report%20324085edfb1645859d79327ea901bc0f/Screen_Shot_2020-04-14_at_00.29.28.png)
+![img/Screen_Shot_2020-04-14_at_00.29.28.png](img/Screen_Shot_2020-04-14_at_00.29.28.png)
 
 Coefficient of Square Meters is 0.3604
 
@@ -103,13 +103,13 @@ Therefore, if the housing is 5 square meters bigger, the price tend to increase 
 
 Case: The client is looking for a housing under 200000 yen but 60 square meters wider
 
-![Multi-Regression%20Analysis%20Report%20324085edfb1645859d79327ea901bc0f/Screen_Shot_2020-04-14_at_00.29.28%201.png](Multi-Regression%20Analysis%20Report%20324085edfb1645859d79327ea901bc0f/Screen_Shot_2020-04-14_at_00.29.28%201.png)
+![img/Screen_Shot_2020-04-14_at_00.29.28%201.png](img/Screen_Shot_2020-04-14_at_00.29.28%201.png)
 
 Predicted Price = 0.3604 * 60 * 10000[yen] = 216240 yen
 
 over 200000 yen
 
-![Multi-Regression%20Analysis%20Report%20324085edfb1645859d79327ea901bc0f/Screen_Shot_2020-04-14_at_00.30.33.png](Multi-Regression%20Analysis%20Report%20324085edfb1645859d79327ea901bc0f/Screen_Shot_2020-04-14_at_00.30.33.png)
+![img/Screen_Shot_2020-04-14_at_00.30.33.png](img/Screen_Shot_2020-04-14_at_00.30.33.png)
 
 However, if it is 15 minutes away from the station,
 
@@ -121,7 +121,7 @@ However, if it is 15 minutes away from the station,
 
 Case: Find the cheapest but a bigger housing from the interval
 
-![Multi-Regression%20Analysis%20Report%20324085edfb1645859d79327ea901bc0f/Screen_Shot_2020-04-14_at_00.31.13.png](Multi-Regression%20Analysis%20Report%20324085edfb1645859d79327ea901bc0f/Screen_Shot_2020-04-14_at_00.31.13.png)
+![img/Screen_Shot_2020-04-14_at_00.31.13.png](img/Screen_Shot_2020-04-14_at_00.31.13.png)
 
 If the housing is 50 square meters, the average price is:
 
@@ -149,4 +149,4 @@ We used the following SQL code to filter the data.
 **AND sq_m >= 50;**
 ```
 
-![Multi-Regression%20Analysis%20Report%20324085edfb1645859d79327ea901bc0f/Screen_Shot_2020-04-14_at_00.32.01.png](Multi-Regression%20Analysis%20Report%20324085edfb1645859d79327ea901bc0f/Screen_Shot_2020-04-14_at_00.32.01.png)
+![img/Screen_Shot_2020-04-14_at_00.32.01.png](img/Screen_Shot_2020-04-14_at_00.32.01.png)
